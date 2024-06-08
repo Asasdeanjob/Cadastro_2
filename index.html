@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Entrada</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" class=logo>
+    <ul>
+      <a href="index.html"><li>Entrada</li></a>
+      <a href="saida.html"><li>Saída</li></a>
+      <a href="lista.html"><li>Visitantes</li></a>
+    </ul>
+  </header>
+
+  <main>
+
+    <h1>Entrada</h1>
+    
+    <form>
+
+      <label for="nome">Nome e Sobrenome:<p>*</p></label>
+      <input class="input-padrao" type="text" id="nome" required>
+
+      <fieldset>
+
+        <legend>Classificação<p>*</p></legend>
+
+        <label for="radio-P"><input type="radio" name="classificacao" value="P" id="radio-P">Pais</label>
+
+        <label for="radio-A"><input type="radio" name="classificacao" value="A" id="radio-A">Aluno</label>
+
+        <label for="radio-R"><input type="radio" name="classificacao" value="R" id="radio-R">Responsavel</label>
+
+        <label for="radio-V"><input type="radio" name="classificacao" value="V" id="radio-V">Visitante</label>
+
+      </fieldset>
+
+      <label for="entrada">Horario de entrada:<p>*</p></label>
+      <input class="input-padrao" type="time" id="entrada" required>
+
+      <input type="submit" value="Enviar" id="env">
+      
+    </form>
+  </main>
+</body>
+
+</html>
